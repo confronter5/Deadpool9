@@ -156,13 +156,13 @@ ppgroup = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-
 }
 
 if (anu.action == 'add') {
-haikal.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `𝐇𝐞𝐲 *@${num.split("@")[0]}* Welcome to Group *${metadata.subject}* 👋
+haikal.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `𝐇𝐞𝐲 *@${num.split("@")[0]}* Added to Group *${metadata.subject}* 👋
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐚𝐝𝐝𝐞𝐝
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
 Creator : https://wa.me/254796283064`})
 } else if (anu.action == 'remove') {
-haikal.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption:`You have left from group motherfucker  just big Idiot🤧
+haikal.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption:`You have left from group motherfucker 👋
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
 Hey *@${num.split("@")[0]}* To Group *${metadata.subject}*
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
@@ -384,7 +384,7 @@ console.log(`Unknown DisconnectReason: ${reason}|${connection}`);
 connectToWhatsApp();
   }
 } else if (connection === "open") {
-  haikal.sendMessage('966585488421' + "@s.whatsapp.net", { text: `*𝐃𝐞𝐚𝐝𝐩𝐨𝐨𝐥🫡*\n\n_𝐕𝟒 𝐒𝐭𝐚𝐫𝐭𝐞𝐝_\n\n* 𝐌𝐚𝐝𝐞 𝐛𝐲 𝐂𝐨𝐧𝐟𝐫𝐨𝐧𝐭𝐞𝐫😍\n\n👽𝐌𝐚𝐝𝐞 𝐟𝐫𝐨𝐦 𝐊𝐞𝐧𝐲𝐚💋\n\n 👻Don't be idiot😂` });
+  haikal.sendMessage('966585488421' + "@s.whatsapp.net", { text: `*𝐃𝐞𝐚𝐝𝐩𝐨𝐨𝐥👅*\n\n_𝐕𝟒 𝐒𝐭𝐚𝐫𝐭𝐞𝐝👽_\n\n* 𝐌𝐚𝐝𝐞 𝐛𝐲 𝐂𝐨𝐧𝐟𝐫𝐨𝐧𝐭𝐞𝐫😍\n\n𝐌𝐚𝐝𝐞 𝐟𝐫𝐨𝐦 𝐊𝐞𝐧𝐲𝐚📌\n\n 𝖣𝗈𝗇𝗍 𝖻𝖾 𝖬𝗈𝗍𝗁𝖾𝗋𝖿𝗎𝖼𝗄𝖾𝗋🫦` });
 }
 // console.log('Connected...', update)
 });
@@ -395,10 +395,6 @@ let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 fs.unwatchFile(file)
 console.log(chalk.redBright(`Update ${__filename}`))
-delete require.cache[file]
-require(file)
-})
-te ${__filename}`))
 delete require.cache[file]
 require(file)
 })

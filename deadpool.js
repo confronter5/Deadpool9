@@ -20,7 +20,7 @@ global.sp = '⭔' // Gausah Juga
 global.autoviewstatus = process.env.autoviewstatus || "TRUE"
 global.wlcm = []
 global.wlcmm = []
-global.anticall = true
+global.anticall = false
 /*
 Declaring Menu type
 

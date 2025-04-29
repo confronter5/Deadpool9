@@ -18,6 +18,7 @@ global.prefa = ['','!','.',',','🐤','🗿']
 global.sessionName = 'session'  //Gausah Juga
 global.sp = '⭔' // Gausah Juga
 global.autoviewstatus = process.env.autoviewstatus || "TRUE"
+global.autolike = process.env.autolikestatus || "TRUE"
 global.wlcm = []
 global.wlcmm = []
 global.anticall = false

@@ -6,7 +6,8 @@
 🚀𝐁𝐎𝐓 𝐒𝐀𝐅𝐄 𝐎𝐍 𝐇𝐄𝐑𝐎𝐊𝐔 𝟏𝟎𝟎%🚀 𝐁𝐘 <a href="https://github.com/Confronter" target="_blank">Frank</a> . Star the repo with courage 🌟.
 </p>
 
-
+DEPLOY BELOW
+https://dashboard.heroku.com/new?template=https://github.com/confronter5/Deadpool9
 
 ## 😍🍭𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 

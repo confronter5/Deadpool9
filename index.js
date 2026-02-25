@@ -1,5 +1,5 @@
 /*
-› Create By Confronter
+› Crea By Confronter
 › Motherfucker
 
 🌷 Give regards Confronter☆ */

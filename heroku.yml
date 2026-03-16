@@ -1,7 +1,8 @@
 build:
-  docker:
-    web:
-      dockerfile: Dockerfile
-
+  packages:
+    - ffmpeg
+    - libwebp
+  languages:
+    - nodejs
 run:
-  web: npm start
+  worker: npm start

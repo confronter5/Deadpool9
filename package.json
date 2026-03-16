@@ -1,28 +1,29 @@
 {
   "name": "deadpool-v4",
   "version": "4.0.0",
-  "description": "Deadpool V4 - WhatsApp Bot by Confronter",
+  "description": "Deadpool V4 - WhatsApp Bot by Confronter using DGXeon Baileys Fork",
   "main": "index.js",
   "engines": {
     "node": "18.x",
     "npm": "10.x"
   },
-  "scripts": "postinstall": "node setup.js" {
+  "scripts": {
     "start": "node index.js",
     "dev": "node index.js --autoread",
-    "postinstall": "mkdir -p tmp session"
+    "postinstall": "node -e \"const fs=require('fs'); const dirs=['tmp','session','src']; dirs.forEach(d=>{if(!fs.existsSync(d))fs.mkdirSync(d,{recursive:true})}); console.log('Directories created')\""
   },
   "keywords": [
     "whatsapp-bot",
     "baileys",
     "deadpool",
+    "dgxeon",
     "whatsapp-automation"
   ],
   "author": "Confronter",
   "license": "MIT",
   "dependencies": {
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.6.0",
+    "@whiskeysockets/baileys": "github:DGXeon13/dgxeon-soket",
     "adm-zip": "^0.5.16",
     "awesome-phonenumber": "^6.8.0",
     "axios": "^1.8.3",
@@ -57,4 +58,4 @@
     "url": "https://github.com/confronter5/Deadpool9/issues"
   },
   "homepage": "https://github.com/confronter5/Deadpool9#readme"
-}
+  }

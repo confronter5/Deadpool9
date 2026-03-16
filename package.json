@@ -7,7 +7,7 @@
     "node": "18.x",
     "npm": "10.x"
   },
-  "scripts": {
+  "scripts": "postinstall": "node setup.js" {
     "start": "node index.js",
     "dev": "node index.js --autoread",
     "postinstall": "mkdir -p tmp session"

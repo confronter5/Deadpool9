@@ -1,61 +1,32 @@
 {
-  "name": "deadpool-v4",
-  "version": "4.0.0",
-  "description": "Deadpool V4 - WhatsApp Bot by Confronter using DGXeon Baileys Fork",
-  "main": "index.js",
-  "engines": {
-    "node": "18.x",
-    "npm": "10.x"
-  },
-  "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js --autoread",
-    "postinstall": "node -e \"const fs=require('fs'); const dirs=['tmp','session','src']; dirs.forEach(d=>{if(!fs.existsSync(d))fs.mkdirSync(d,{recursive:true})}); console.log('Directories created')\""
-  },
-  "keywords": [
-    "whatsapp-bot",
-    "baileys",
-    "deadpool",
-    "dgxeon",
-    "whatsapp-automation"
-  ],
-  "author": "Confronter",
-  "license": "MIT",
-  "dependencies": {
-    "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "github:DGXeon13/dgxeon-soket",
-    "adm-zip": "^0.5.16",
-    "awesome-phonenumber": "^6.8.0",
-    "axios": "^1.8.3",
-    "chalk": "^4.1.2",
-    "dotenv": "^16.5.0",
-    "file-type": "^16.5.4",
-    "fluent-ffmpeg": "^2.1.3",
-    "fs-extra": "^11.2.0",
-    "human-readable": "^0.2.1",
-    "jimp": "^0.16.13",
-    "lodash": "^4.17.21",
-    "lowdb": "^2.1.0",
-    "megajs": "^1.3.2",
-    "moment-timezone": "^0.5.45",
-    "mongoose": "^8.2.0",
-    "node-webpmux": "^3.2.0",
-    "pino": "^8.19.0",
-    "pino-pretty": "^11.0.0",
-    "qrcode-terminal": "^0.12.0",
-    "sequelize": "^6.37.1",
-    "sqlite3": "^5.1.7",
-    "yargs": "^17.7.2"
-  },
-  "optionalDependencies": {
-    "sharp": "^0.33.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/confronter5/Deadpool9.git"
-  },
-  "bugs": {
-    "url": "https://github.com/confronter5/Deadpool9/issues"
-  },
-  "homepage": "https://github.com/confronter5/Deadpool9#readme"
-  }
+    "name": "PrimisCrasher",
+    "version": "7.0",
+    "description": "WhatsApp-Bot Baileys (DsPrimis)",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "Primis",
+    "license": "MIT",
+    "dependencies": {
+        "@adiwajshing/keyed-db": "*",
+        "@ffmpeg-installer/ffmpeg": "*",
+        "@whiskeysockets/baileys": "npm:@alannxd/baileys",
+        "@hapi/boom": "*",
+        "axios": "*",
+        "chalk": "4.1.2",
+        "human-readable": "*",
+        "jimp": "*",
+        "@octokit/rest": "^21.1.0",
+        "crypto": "*",
+        "moment-timezone": "*",
+        "fluent-ffmpeg": "*",
+        "wa-sticker-formatter": "*",
+        "openai": "*",
+        "node-fetch": "*",
+        "performance-now": "*",
+        "pino": "*",
+        "readline": "*"
+    }
+}

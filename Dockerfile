@@ -1,19 +1,33 @@
-FROM node:lts-buster
+FROM node:20
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
+# Install system dependencies (ffmpeg, imagemagick, webp + build tools for sqlite3)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg \
+    imagemagick \
+    webp \
+    python3 \
+    make \
+    g++ \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
+# Set working directory
+WORKDIR /app
 
-RUN npm install && npm install -g qrcode-terminal pm2
+# Copy package files
+COPY package*.json ./
 
+# Install dependencies
+RUN npm install && npm cache clean --force
+
+# Copy application code
 COPY . .
 
-EXPOSE 3000
+# Expose port
+EXPOSE 5000
 
-CMD ["npm", "start"]
+# Set environment
+ENV NODE_ENV=production
+ENV PORT=5000
+
+# Run command
+CMD ["npm", "run", "start"]

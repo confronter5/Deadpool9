@@ -382,9 +382,12 @@ connectToWhatsApp();
   } else {
 console.log(`Unknown DisconnectReason: ${reason}|${connection}`);
 connectToWhatsApp();
-  }
-} else if (connection === "open") {
-  haikal.sendMessage('254793908571' + "@s.whatsapp.net", { text: `*𝐃𝐞𝐚𝐝𝐩𝐨𝐨𝐥👅*\n\n_𝐕𝟒 𝐒𝐭𝐚𝐫𝐭𝐞𝐝👽_\n\n* 𝐌𝐚𝐝𝐞 𝐛𝐲 𝐂𝐨𝐧𝐟𝐫𝐨𝐧𝐭𝐞𝐫😍\n\n𝐌𝐚𝐝𝐞 𝐟𝐫𝐨𝐦 𝐊𝐞𝐧𝐲𝐚📌\n\n 𝖣𝗈𝗇𝗍 𝖻𝖾 𝖬𝗈𝗍𝗁𝖾𝗋𝖿𝗎𝖼𝗄𝖾𝗋🫦` });
+  } else if (connection === "open") {
+      await initializeDatabase();
+      console.log(color("✅ DEAD - KING CONNECTED & DATABASE READY", "green"));
+      haikal.sendMessage(client.user.id, { text: `🔶 *DEAD KING*\n✅ CONNECTED\n⚙️ MODE: ${mode}` }).catch(() => {});
+
+
 }
 // console.log('Connected...', update)
 });
